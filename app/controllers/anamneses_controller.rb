@@ -48,7 +48,7 @@ class AnamnesesController < ApplicationController
   def update
     respond_to do |format|
       if @anamnese.update(anamnese_params)
-        format.html { redirect_to @anamnese, notice: 'Anamnese was successfully updated.' }
+        format.html { redirect_to @anamnese, notice: 'Anamnese editada com sucesso.' }
         format.json { render :show, status: :ok, location: @anamnese }
       else
         format.html { render :edit }

@@ -50,9 +50,11 @@
         <td><%= anamnese.atividade_fisica %></td>
         <td><%= anamnese.desc_atividade_fisica %></td>
         <td><%= anamnese.objetivo %></td>
+        <% aluno = Usuario.find(anamnese.usuario_id) %>
+        <td><%= aluno.nome %></td>
         <td><%= link_to 'Show', anamnese %></td>
-        <td><%= link_to 'Edit', edit_anamnese_path(anamnese) %></td>
-        <td><%= link_to 'Destroy', anamnese, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Edit', edit_anamnese_path(anamnese), id:"e-#{aluno.nome}" %></td>
+        <td><%= link_to 'Destroy', anamnese, method: :delete, data: { confirm: 'Are you sure?' }, id:"d-#{aluno.nome}"  %></td>
       </tr>
     <% end %>
   </tbody>

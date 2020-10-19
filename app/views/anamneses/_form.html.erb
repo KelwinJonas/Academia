@@ -77,9 +77,9 @@
   <div class="field">
     <%= form.label :cirurgia, :value=> 'VOCê Já FEZ ALGUMA INTERVENçãO CIRURGICA?'%>
     <br>
-    <%= form.radio_button :cirurgia, 'Sim'%>
+    <%= form.radio_button :cirurgia, 'Sim', id:"simCirurgia" %>
     <%= form.label :cirurgia, "Sim", :value => "Sim(Especificar)" %>
-    <%= form.radio_button :cirurgia, 'Não' %>
+    <%= form.radio_button :cirurgia, 'Não', id:"naoCirurgia" %>
     <%= form.label :cirurgia, "Não", :value => "Não" %>
   </div>
   <br/>
@@ -99,9 +99,9 @@
   <div class="field">
     <%= form.label :dor_corporal, :value=> 'SENTE DOR EM ALGUMA PARTE DO CORPO?' %>
     <br>
-    <%= form.radio_button :dor_corporal, 'Sim' %>
+    <%= form.radio_button :dor_corporal, 'Sim', id:"simDorCorporal" %>
     <%= form.label :dor_corporal, "Sim", :value => "Sim(Especificar)" %>
-    <%= form.radio_button :dor_corporal, 'Não' %>
+    <%= form.radio_button :dor_corporal, 'Não', id:"naoDorCorporal" %>
     <%= form.label :dor_corporal, "Não", :value => "Não" %>
 
   </div>
@@ -115,9 +115,9 @@
   <div class="field">
     <%= form.label :lesao,:value=>'NOS úLTIMOS 6 MESES, VOCê SOFREU ALGUMA LESãO OSTEOARTICULAR?' %>
     <br>
-    <%= form.radio_button :lesao, 'Sim' %>
+    <%= form.radio_button :lesao, 'Sim', id:"simLesao" %>
     <%= form.label :lesao, "Sim", :value => "Sim(Especificar)" %>
-    <%= form.radio_button :lesao, 'Não'%>
+    <%= form.radio_button :lesao, 'Não', id:"naoLesao"%>
     <%= form.label :lesao, "Não", :value => "Não" %>
   </div>
   <br/>
@@ -128,9 +128,9 @@
   <br/>
   <div class="field">
     <%= form.label :alergia, :value =>'VOCê POSSUI ALGUMA ALERGIA?' %><br>
-    <%= form.radio_button :alergia, 'Sim' %>
+    <%= form.radio_button :alergia, 'Sim', id:"simAlergia" %>
     <%= form.label :alergia, "Sim", :value => "Sim(Especificar)" %>
-    <%= form.radio_button :alergia, 'Não' %>
+    <%= form.radio_button :alergia, 'Não', id:"naoAlergia" %>
     <%= form.label :alergia, "Não", :value => "Não" %>
   </div>
   <br/>
@@ -142,27 +142,27 @@
   <div class="field">
     <%= form.label :fumante, :value=>'VOCê FUMA?' %>
     <br>
-    <%= form.radio_button :fumante, 'Sim' %>
+    <%= form.radio_button :fumante, 'Sim', id:"simFumante" %>
     <%= form.label :fumante, "Sim", :value => "Sim(Especificar)" %>
-    <%= form.radio_button :fumante, 'Não'%>
+    <%= form.radio_button :fumante, 'Não', id:"naoFumante" %>
     <%= form.label :fumante, "Não", :value => "Não" %>
   </div>
   <br/>
   <div class="field">
     <%= form.label :alcolotra , :value=>'VOCê CONSOME BEBIDA ALCOóLICA?'%>
     <br>
-    <%= form.radio_button :alcolotra, 'Sim' %>
+    <%= form.radio_button :alcolotra, 'Sim', id:"simAlcolotra" %>
     <%= form.label :alcolotra, "Sim", :value => "Sim(Especificar)" %>
-    <%= form.radio_button :alcolotra, 'Não'%>
+    <%= form.radio_button :alcolotra, 'Não', id:"naoAlcolotra"%>
     <%= form.label :alcolotra, "Não", :value => "Não" %>
   </div>
   <br/>
   <div class="field">
     <%= form.label :atividade_fisica, :value=>'VOCê PRATICA OU Jé PRATICOU ALGUMA ATIVIDADE FíSICA?' %>
     <br>
-    <%= form.radio_button :atividade_fisica, 'Sim' %>
+    <%= form.radio_button :atividade_fisica, 'Sim', id:"simAtividadeFisica" %>
     <%= form.label :atividade_fisica, "Sim", :value => "Sim(Especificar)" %>
-    <%= form.radio_button :atividade_fisica, 'Não' %>
+    <%= form.radio_button :atividade_fisica, 'Não', id:"naoAtividadeFisica" %>
     <%= form.label :atividade_fisica, "Não", :value => "Não" %>
   </div>
   <br/>
